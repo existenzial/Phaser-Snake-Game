@@ -8,8 +8,8 @@ var Game = {
     preload: function() {
         // Here we load all the needed resources for the level.
         // In our case, that's just two squares - one for the snake body and one for the apple.
-        game.load.image('snake', './assets/images/snake.png');
-        game.load.image('apple', './assets/images/apple.png');
+        game.load.image('snake', './assets/images/blkcube.png');
+        game.load.image('apple', './assets/images/blpanthsmall.png');
     },
 
     create: function() {
@@ -30,7 +30,7 @@ var Game = {
         // Set up a Phaser controller for keyboard input.
         cursors = game.input.keyboard.createCursorKeys();
 
-        game.stage.backgroundColor = '#061f27';
+        game.stage.backgroundColor = '#ffffff';
 
         // Generate the initial snake stack. Our snake will be 10 elements long.
         // Beginning at X=150 Y=150 and increasing the X on every iteration.
@@ -51,7 +51,7 @@ var Game = {
         };
         textStyle_Value = {
             font: "bold 18px sans-serif",
-            fill: "#fff",
+            fill: "#456",
             align: "center"
         };
 
